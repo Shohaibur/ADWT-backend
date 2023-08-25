@@ -9,7 +9,7 @@ import { SellerModule } from './seller/seller.module';
 import { ProductModule } from './product/product.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(
+  imports: [  TypeOrmModule.forRoot(
     {
       "type": "postgres",
       "host": "localhost",
@@ -20,7 +20,8 @@ import { ProductModule } from './product/product.module';
       autoLoadEntities: true,
       "synchronize": true
     }
-  ), ManagerModule, SellerModule, ProductModule],
+  ),  
+  ManagerModule, SellerModule, ProductModule],
   controllers: [],
   providers: [],
 })

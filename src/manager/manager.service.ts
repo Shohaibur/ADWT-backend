@@ -16,7 +16,7 @@ export class ManagerService
   constructor(
     @InjectRepository(ManagerEntity)
     private managerRepo: Repository<ManagerEntity>,
-   // private mailerService: MailerService,
+  
    ) {}
 
 
